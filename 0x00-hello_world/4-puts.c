@@ -1,15 +1,14 @@
-#!/bin/bash
+
 #include <stdio.h>
 
 /**
- * main - print a text
+ * main - Prints "Programming is like building a multilingual puzzle, followed by a new line.
  *
- * return: Always 0 (success)
- * Description:main - prints out a string to stdout.
- *  return:0 if success
+ * Return: Always 0.
  */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
+
 	return (0);
 }
