@@ -1,1 +1,1 @@
-This is introduction to low level programming on C
+Project on variables, if, else, while.
