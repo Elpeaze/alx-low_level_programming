@@ -1,1 +1,1 @@
-Project on variables, if, else, while.
+Projects on functions, nested loops.
