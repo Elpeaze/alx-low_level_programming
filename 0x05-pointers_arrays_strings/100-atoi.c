@@ -8,19 +8,33 @@
  */
 int _atoi(char *s)
 {
-	int i, n, sign = 1, no_of_dash = 0;
+	int i = 0;
+	unsigned int result = 0;
+	int negative = 0;
 
-	/* skip any character that is not a number*/
-	for (i = 0; s[i] < '0' || s[i] > '9'; i++)
+	while (s[i] != '\0')
 	{
-		if (s[i] == '\0')
-			return (0);
 		if (s[i] == '-')
-			no_of_dash++;
+		{
+			negative++;
+		}
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			result = result * 10 + s[i] - '0';
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+			{
+				break;
+			}
+		}
+		if (s[i] > '9' && s[i] < 0)
+		{
+			return (0);
+		}
+		i++;
 	}
-
-	sign = (no_of_dash % 2 == 0) ? 1 : -1;
-	for (n = 0; s[i] >= '0' && s[i] <= '9'; i++)
-		n = 10 * n + (s[i] - '0');
-	return (sign * n);
+	if (result != 0 && (negative % 2 != 0 || negative == 1))
+	{
+		result = result * -1;
+	}
+	return (result);
 }
