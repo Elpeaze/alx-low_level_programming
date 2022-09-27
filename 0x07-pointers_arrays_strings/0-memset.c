@@ -1,23 +1,22 @@
 #include "main.h"
 
 /**
- * _memset - a function that fills the first n bytes of the memory
+ * main - a function that fills the first n bytes of the memory
  *
- * @s: s value of the memory area that has to get filled
- * @b: constat
- * @n: fills n bytes of memory
+ * _memset - function that multiplies two digits
  *
+ * Decription: multiplies two digits
  * Return: s
  */
 int main(void)
 {
 char *_memset(char *s, char b, unsigned int n)
 {
-	char *p = s;
+	unsigned int i;
 
-	while (n-- > 0)
+	for (i = 0; i < n; i++)
 	{
-		*p++ = b;
+		s[i] = b;
 	}
 	return (s);
 }
