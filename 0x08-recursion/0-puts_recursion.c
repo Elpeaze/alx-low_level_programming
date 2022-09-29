@@ -2,7 +2,7 @@
 
 /**
  * main - function that prints a string
- * _puts_recursion - function that calls _putchar
+ * _puts_recursion - function that multiplies
  * @s: pointer
  * Description: prints string of characters
  * Return: the string
