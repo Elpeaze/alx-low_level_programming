@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- * main - function that prints a string
  * _puts_recursion - function that multiplies
  * @s: pointer
  * Description: prints string of characters
