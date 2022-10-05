@@ -11,21 +11,19 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *p;
-	unsigned int i = 0;
+	char *mem, *head;
 
-	p = (char *) malloc(sizeof(char) * size);
-
-	if (p == NULL)
-		return (0);
-
-	while (i < size)
+	if (!size)
+		return (NULL);
+	mem = (char *) malloc(size);
+	if (mem == NULL)
+		return (NULL);
+	head = mem;
+	while (size > 0)
 	{
-		*(p + i) = c;
-		i++;
+		*mem = c;
+		mem++;
+		size--;
 	}
-
-	*(p + i) = '\0';
-
-	return (p);
+	return (head);
 }
