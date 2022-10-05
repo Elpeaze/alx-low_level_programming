@@ -7,7 +7,7 @@
  * Description: multiplies two digits
  * Return: dest
  */
-char *_memcpy(char *dest, char *src, unsigned int n);
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
 
