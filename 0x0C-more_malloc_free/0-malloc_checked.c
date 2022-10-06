@@ -1,9 +1,18 @@
-#ifndef _SAMPLE_HEADER_H_
-#define _SAMPLE_HEADER_H_
-int _putchar(char c);
-void *malloc_checked(unsigned int b);
-char *string_nconcat(char *s1, char *s2, unsigned int n);
-void *_calloc(unsigned int nmemb, unsigned int size);
-int *array_range(int min, int max);
-void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
-#endif
+#include <stdlib.h>
+#include <stdio.h>
+#include "main.h"
+/**
+ * malloc_checked - function that allocates memory using malloc
+ *
+ * @b: int value
+ * Return: pointer to allocated memory
+ */
+void *malloc_checked(unsigned int b)
+{
+	unsigned int *m;
+
+	m = malloc(b);
+	if (m == NULL)
+		exit(98);
+	return (m);
+}
