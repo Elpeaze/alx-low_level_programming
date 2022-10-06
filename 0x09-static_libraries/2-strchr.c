@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stddef.h>
 
 /**
  * main - function that locates a character in a string
@@ -7,7 +9,7 @@
  * @c: 2nd digit to be multiplied
  * Return: Pointer to char or NULL
  */
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
 {
 	int i = 0;
 
