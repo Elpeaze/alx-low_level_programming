@@ -1,20 +1,20 @@
-#ifndef _CALC_H_
-#define _CALC_H_
+#include <stdlib.h>
+
 /**
- * struct op - Struct op
- *
- * @op: The operator
- * @f: The function associated
+ * int_index - calls a callback function that prints a name
+ * @array: the name to be printed
+ * @size: the callback function
+ * @cmp: the callback function
+ * Description: calls a callback function that prints a name
+ * Return: void
  */
-typedef struct op
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	char *op;
-	int (*f)(int a, int b);
-} op_t;
-int op_add(int a, int b);
-int op_sub(int a, int b);
-int op_mul(int a, int b);
-int op_div(int a, int b);
-int op_mod(int a, int b);
-int (*get_op_func(char *s))(int, int);
-#endif
+	int i;
+
+	if (array != NULL && cmp != NULL)
+		for (i = 0; i < size; i++)
+			if (cmp(array[i]) != 0)
+				return (i);
+	return (-1);
+}
