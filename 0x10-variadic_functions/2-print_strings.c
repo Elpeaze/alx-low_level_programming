@@ -1,28 +1,33 @@
-#include "variadic_functions.h"
+#include <stdarg.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
- * print_strings - this function print all the integers passed
- * @separator: separator char
- * @n: number of arguments passed
+ * print_strings- prints the opcode of the main fn
+ * @separator: the name to be printed
+ * @n: the callback function
+ * @...: the callback function
+ * Description: prints the opcode of the main fn
+ * Return: integer
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
-	char *argString;
 	unsigned int i;
+	char *str;
 
 	va_start(ap, n);
-
 	for (i = 0; i < n; i++)
 	{
-		argString = va_arg(ap, char *);
-
-		if (argString != NULL)
-			printf("%s", argString);
-		else
+		str = va_arg(ap, char *);
+		if (str == NULL)
 			printf("(nil)");
-		if (i != n - 1 && separator != NULL)
+		else
+			printf("%s", str);
+		if (separator != NULL && i != n - 1)
 			printf("%s", separator);
 	}
-	va_end(ap);
-	printf("\n");
+	putchar('\n');
+
+
 }
