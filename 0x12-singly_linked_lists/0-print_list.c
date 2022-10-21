@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -10,7 +8,7 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t nodeNumber = 0;
+	unsigned int nodeNumber = 0;
 
 	while (h != NULL)
 	{
