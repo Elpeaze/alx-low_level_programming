@@ -1,7 +1,7 @@
 #ifndef LIST_H_
 #define LIST_H_
 
-/*STRUCTURES*/
+/*DATA STRUCTURE*/
 /**
  * struct listint_s - singly linked list
  * @n: integer
