@@ -1,1 +1,3 @@
-My project on functions, nested loops
+# FUNCTIONS AND NESTED LOOPS
+
+### **Project on functions and nested loops followed by tasks.**

@@ -1,4 +1,3 @@
-1 Even More Pointers, Arrays, and Strings.
-2 
-3 
+# MORE POINTERS ARRAYS AND STRINGS
 
+## **Even more pointers arays and strings.**
