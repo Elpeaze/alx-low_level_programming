@@ -8,16 +8,12 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int i, j, nFlips = 0;
+	unsigned long int xor = n ^ m, nFlips = 0;
 
-	while (!(n == 0 && m == 0))
+	while (xor > 0)
 	{
-		i = n & 1;
-		j = m & 1;
-		n = n >> 1;
-		m = m >> 1;
-	if (i != j)
-		nFlips++;
+		nFlips += (xor & 1);
+		xor >>= 1;
 	}
 	return (nFlips);
 }
