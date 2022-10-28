@@ -6,20 +6,20 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int u;
-	unsigned int z = 0;
+	int i;
+	unsigned int convertedNum = 0;
 
 	if (!b)
 		return (0);
 
-	for (u = 0; b[u] != '\0'; u++)
+	for (i = 0; b[i] != '\0'; i++)
 	{
-		u = u << 1;
+		convertedNum = convertedNum << 1;
 
-		if (b[u] != '0' && b[u] != '1')
+		if (b[i] != '0' && b[i] != '1')
 			return (0);
-		if (b[u] == '1')
-			u = u | 1;
+		if (b[i] == '1')
+			convertedNum = convertedNum | 1;
 	}
-	return (u);
+	return (convertedNum);
 }
