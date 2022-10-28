@@ -1,5 +1,5 @@
 # Function Pointers
 
-### _This project contains **solutions** on **function pointers**as given by alx._
+### _This project contains **solutions** on **function pointers** as given by alx._
 
 
