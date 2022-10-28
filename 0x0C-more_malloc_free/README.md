@@ -1,1 +1,3 @@
-This project contains solutions on more malloc, free as give by alx.
+# MORE MALLOC and FREE
+
+### More malloc, free followed by solutions to it's tasks as give by alx.

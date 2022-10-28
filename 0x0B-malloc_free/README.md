@@ -1,1 +1,3 @@
-This project contains solutions on malloc, free tasks as given by alx.
+# MALLOC, FREE
+
+### This is project on malloc, free followed by tasks as given by alx.

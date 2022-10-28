@@ -1,1 +1,3 @@
-This project contains solutions on structure typedef as given by alx.
+# ***Structures Typedef***
+
+### The project **structure typedef** as given by alx, followed by solutions to it's tasks.
