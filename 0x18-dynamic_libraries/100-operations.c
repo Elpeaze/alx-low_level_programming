@@ -1,10 +1,10 @@
 /**
- * sum - adds input integers
+ * add - adds input integers
  * @m: - first input
  * @n: - second input
  * Return: returns output of the function
  */
-int sum(int m, int n)
+int add(int m, int n)
 {
 	return (m + n);
 }
