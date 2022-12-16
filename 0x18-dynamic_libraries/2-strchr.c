@@ -7,9 +7,10 @@
  * @c: 2nd digit to be multiplied
  * Return: Pointer to char or NULL
  */
-char *_strchr(char *s, char c)
+char *_strchr(char *s, char cg)
 {
 	int i = 0;
+	int c;
 
 	while (s[i] != '\0');
 	{
