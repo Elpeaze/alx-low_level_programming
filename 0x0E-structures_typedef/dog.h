@@ -1,5 +1,5 @@
-#ifndef _DOG__
-#define _DOG__
+#ifndef __DOG__
+#define __DOG__
 
 /**
  * struct dog - struct of dog data
@@ -12,7 +12,7 @@ struct dog
 	char *name;
 	float age;
 	char *owner;
-}
+};
 
 typedef struct dog dog_t;
 
@@ -21,4 +21,4 @@ void print_dog(struct dog *d);
 void free_dog(dog_t *d);
 dog_t *new_dog(char *name, float age, char *owner);
 
-#endif
+#endif /* __DOG__ */
